@@ -8,10 +8,8 @@ const Card = ({ img, title, description, link }) => {
         <img src={img} alt='Lago di Braies' />
         <div class='card_details'>
           <div class='title'>{title}</div>
-
           <p>{description}</p>
-
-          <a src={link} target='_blank'>
+          <a href={link} target='_blank'>
             Learn More
           </a>
         </div>

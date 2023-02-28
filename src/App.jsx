@@ -1,29 +1,36 @@
 import Card from './components/Card'
-import emmySquared from './assets/images/emmySquared.webp'
+import dominicks from './assets/images/dominicks.webp'
+import turkishCuisine from './assets/images/turkishCuisine.webp'
+import cafeBubamara from './assets/images/cafeBubamara.webp'
 import './App.css'
 
 const App = () => {
   return (
     <div className='App'>
-      <header className='App-header'>
-        <h1 className='header-title'>Discover the Best Pizza Spots</h1>
-      </header>
       <main className='mainContainer'>
+        <header className='App-header'>
+          <h1 className='header-title'>Exploring Three Unique Cuisines</h1>
+        </header>
         <section className='places'>
           <Card
-            img={emmySquared}
-            title='Emmy Squared Pizza'
-            description='Founded on an unconditional love of well-made food, Emmy Squared combined a New York style “grandma” pie with a Detroit style pizza, and then topped it off with an added dose of culinary creativity.'
+            img={dominicks}
+            link={
+              'https://www.bronxlittleitaly.com/merchants/restaurants/dominicks-restaurant/'
+            }
+            title="Dominick's - Italian Cuisine"
+            description="This unfussy gem located on the Bronx's Arthur Avenue — otherwise known as the boroughs Little Italy — has been dishing out generous servings of well-sauced pasta for more than 50 years."
           />
           <Card
-            img={emmySquared}
-            title='Emmy Squared Pizza'
-            description='Founded on an unconditional love of well-made food, Emmy Squared combined a New York style “grandma” pie with a Detroit style pizza, and then topped it off with an added dose of culinary creativity.'
+            img={turkishCuisine}
+            link={'http://www.turkishcuisinenyc.com/'}
+            title='Turkish Cuisine'
+            description="As far as authentic Persian experiences go, Turkish Cuisine in the Hell's Kitchen District really cannot be beat. Once you step foot in this place you will feel that you have been transported direct to the Grand Bazaar in Istanbul."
           />
           <Card
-            img={emmySquared}
-            title='Emmy Squared Pizza'
-            description='Founded on an unconditional love of well-made food, Emmy Squared combined a New York style “grandma” pie with a Detroit style pizza, and then topped it off with an added dose of culinary creativity.'
+            img={cafeBubamara}
+            title='Cafe Bubamara - Balkan Cuisine'
+            link={'https://cafebubamara.cafe/'}
+            description='Cafe Bubamara is a Balkan restaurant located at 263 Parker Ave in Clifton, NJ. The restaurant is a family owned and operated business that has been serving the community for over 10 years.'
           />
         </section>
       </main>
