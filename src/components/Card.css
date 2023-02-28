@@ -1,0 +1,22 @@
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.card_details {
+  padding: 16px 8px 8px 8px;
+}
+
+button:focus,
+button:hover {
+  background-color: rgb(23, 125, 243);
+  color: #e0efff;
+}

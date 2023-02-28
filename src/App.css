@@ -1,0 +1,57 @@
+/* 
+  Set the background overlay to a dark color, and set the opacity to 0.5
+  to make the background image slightly transparent.
+
+*/
+.App {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: display;
+
+  /* Set the background overlay to a dark color, and set the opacity to 0.5
+  to make the background image slightly transparent. */
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  height: 100vh;
+
+  /* Center the container in middle on horizontal axis */
+  margin: 0 auto;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: x-large;
+}
+
+.header-title {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: Actor, sans-serif;
+  color: rgb(250, 235, 20);
+  margin: 0 20 0 0;
+}
+
+.mainContainer {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.places {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+#container {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 20vh;
+}
